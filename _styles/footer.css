@@ -1,0 +1,49 @@
+#footer{
+	background-color: #8d4627;
+	position: relative; 
+	background-repeat: no-repeat;
+	background-size: cover;         /* ✅ stretches image */
+	background-position: center; 
+	padding-top: 4vh;
+}
+
+
+.footer-text{
+	color: #000;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: white;
+    font-family: "PT Serif", serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 1rem;
+}
+
+
+#footer a{
+	color: #fff;
+}
+
+#footer a:hover{
+	color: #000;
+}
+
+
+.footer-icons {
+  display: flex;
+  justify-content: left;
+  padding-left: 15px;
+  gap: 20px; /* space between icons */
+  margin-bottom: 1rem;
+}
+
+.footer-icon {
+  height: 30px;
+  width: 30px;
+  transition: transform 0.3s ease;
+}
+
+.footer-icon:hover {
+  transform: translateY(-6px);
+}

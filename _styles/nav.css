@@ -1,0 +1,169 @@
+.navbar {
+    background-color: transparent !important;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.nav-item {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.nav-link {
+    color: #000;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: white;
+    font-family: "PT Serif", serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 1.2rem;
+
+}
+
+.nav-link:hover {
+    color: #000;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: grey;
+    font-family: "PT Serif", serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 1.2rem;
+
+}
+
+.nav-divider{
+	color: white;
+}
+
+/* Vertical divider between nav items */
+.nav-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 25%;
+    height: 50%;
+    width: 2px;
+    background-color: #fff;
+}
+
+/* Remove dividers when collapsed (mobile view) */
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nav-item {
+        flex: unset;
+        text-align: left;
+    }
+
+    .nav-item::after {
+        display: none;
+    }
+}
+#header{
+	background-image: url("../_images/background_img.jpg");
+	height: 100vh;
+	position: relative; 
+	background-repeat: no-repeat;
+	background-size: cover;         /* ✅ stretches image */
+	background-position: center; 
+}
+
+#about-header{
+	background-image: url("../_images/about-images/header-plain.png");
+	height: 100vh;
+	position: relative; 
+	background-repeat: no-repeat;
+	background-size: cover;         /* ✅ stretches image */
+	background-position: center; 
+}
+
+#portfolio-header{
+	background-image: url("../_images/portfolio-images/header.png");
+	height: 100vh;
+	position: relative; 
+	background-repeat: no-repeat;
+	background-size: cover;         /* ✅ stretches image */
+	background-position: center; 
+}
+
+#grantexpedition-header{
+	background-image: url("../_images/tan-background.png");
+	height: 100vh;
+	position: relative; 
+	background-repeat: no-repeat;
+	background-size: cover;         /* ✅ stretches image */
+	background-position: center; 
+}
+
+#herstrength-header{
+	background-image: url("../_images/pink-background.png");
+	height: 100vh;
+	position: relative; 
+	background-repeat: no-repeat;
+	background-size: cover;         /* ✅ stretches image */
+	background-position: center; 
+}
+
+#traillink-header{
+	background-image: url("../_images/green-background.png");
+	height: 100vh;
+	position: relative; 
+	background-repeat: no-repeat;
+	background-size: cover;         /* ✅ stretches image */
+	background-position: center; 
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent !important;
+    padding: 0.5rem 1rem;
+    z-index: 10;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease-in 1s forwards;
+}
+
+.name {
+  animation-delay: 0.2s;
+}
+
+.subtitle {
+  animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
